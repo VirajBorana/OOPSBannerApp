@@ -1,40 +1,49 @@
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
-        printLine1();
-        printLine2();
-        printLine3();
-        printLine4();
-        printLine5();
-        printLine6();
-        printLine7();
+
+        String[] o = getOPattern();
+        String[] p = getPPattern();
+        String[] s = getSPattern();
+
+        for (int i = 0; i < 7; i++) {
+            System.out.println(o[i] + "  " + o[i] + "  " + p[i] + "  " + s[i]);
+        }
     }
 
-    static void printLine1() {
-        System.out.println(" *****     *****     ******    ***** ");
+    public static String[] getOPattern() {
+        return new String[]{
+                " *****  ",
+                "*     * ",
+                "*     * ",
+                "*     * ",
+                "*     * ",
+                "*     * ",
+                " *****  "
+        };
     }
 
-    static void printLine2() {
-        System.out.println("*     *   *     *    *     *  *     *");
+    public static String[] getPPattern() {
+        return new String[]{
+                "******  ",
+                "*     * ",
+                "*     * ",
+                "******  ",
+                "*       ",
+                "*       ",
+                "*       "
+        };
     }
 
-    static void printLine3() {
-        System.out.println("*     *   *     *    *     *  *      ");
-    }
-
-    static void printLine4() {
-        System.out.println("*     *   *     *    ******    ***** ");
-    }
-
-    static void printLine5() {
-        System.out.println("*     *   *     *    *              *");
-    }
-
-    static void printLine6() {
-        System.out.println("*     *   *     *    *        *     *");
-    }
-
-    static void printLine7() {
-        System.out.println(" *****     *****     *         ***** ");
+    public static String[] getSPattern() {
+        return new String[]{
+                " *****  ",
+                "*       ",
+                "*       ",
+                " *****  ",
+                "      * ",
+                "*     * ",
+                " *****  "
+        };
     }
 }
